@@ -1,0 +1,87 @@
+/* <!-- 分頁導覽頁面 --> */
+.ol01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.li04::not(:last-child){ /* 指定為最後一個li以外的li*/
+   margin-right: 10px; 
+}
+
+.li04 a{
+    display: block;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    line-height: 1;
+    background-color: #e6e6e6; /*裡面的顏色*/
+    border: 2px solid #e5c046 ; /*外面框的顏色*/
+    border-radius: 10px; /*圓角*/
+}
+.li04 span{
+  display: block;
+  padding: 20px;
+  color: #f2f2f2; /*1選取起來的文字顏色*/
+  line-height: 1;
+  background-color: #e5c046;
+  border: 2px solid #e5c046;
+  border-radius: 10px;
+}
+
+/* 管理學報告ppt區域 */
+.wrap05{
+    display: flex;
+    flex-wrap: wrap; /*換行*/
+}
+.item03{
+    padding: 15px;
+    width: 30%;
+    height: 245px;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    margin:auto;
+}
+.item03::not(:nth-child(3n+3)){
+    max-width: 2%;
+}
+.item03:nth-child(n+4){
+    margin-top: 30px;
+}
+.img13{
+    width: 100%;
+    height: auto;
+}
+
+/* <!-- 管理學文字部分 --> */
+.heading04{
+    font-size: 26px;
+}
+.heading04 span { /* 英文字母設定*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+   color: #e5c046;
+   font-size: 20px;
+   font-style: italic;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase; /*設定大寫英文字母*/
+   
+}
+.heading04 span::before{/*利用伪元素繪製黃色線條*/
+   content: '';
+   display: inline-block;
+   margin-right: 20px;
+   width: 40px;
+   height: 1px;
+   background-color: #e5c046;
+}
+.h201{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

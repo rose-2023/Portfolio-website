@@ -1,0 +1,105 @@
+/*關於我的作品集字體*/
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    }
+    /*剛開始字體的部分 */
+    
+    .heading::before,
+    .heading::after{
+        content: '';
+        width: 70px;
+        height: 3px;
+        background-color: #e5c046;
+    }
+    
+    /* 裝飾 */
+    .heading::before{
+        margin-right: 30px;
+    }
+    
+    .heading::after{
+        margin-left: 30px;
+    }
+    
+    #heading{
+        transform: translateX(10px);
+    }
+
+/* 導覽頁 */
+.ul01{
+    display: flex; /*水平並列*/
+    justify-content: space-between; /*左右對齊*/
+    width: 1400px;  /*線之間距*/
+    list-style: none; /*圓點消失*/
+}
+
+.li01{
+    width: 25%;
+    border-left: 1px solid #e5c046;
+}
+
+.li01:last-child{
+    border-radius: 1px solid #e5c046;
+}
+
+/*裝飾  */
+.li01 a{
+    display: flex;
+    flex-direction: column; /*將flex item設定垂直排列的格式*/
+    padding: 10px 0;
+    color: #e5c046;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+   
+}
+
+.li01 a span{
+    color: #e5c046;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* <!-- 分頁導覽頁面 --> */
+.ol01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.li04::not(:last-child){ /* 指定為最後一個li以外的li*/
+   margin-right: 10px; 
+}
+
+.li04 a{
+    display: block;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    line-height: 1;
+    background-color: #e6e6e6; /*裡面的顏色*/
+    border: 2px solid #e5c046 ; /*外面框的顏色*/
+    border-radius: 10px; /*圓角*/
+}
+.li04 span{
+  display: block;
+  padding: 20px;
+  color: #f2f2f2; /*1選取起來的文字顏色*/
+  line-height: 1;
+  background-color: #e5c046;
+  border: 2px solid #e5c046;
+  border-radius: 10px;
+}
+
